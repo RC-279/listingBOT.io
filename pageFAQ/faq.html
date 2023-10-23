@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="faqstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Your Page Title</title>
+</head>
+<body>
+
+
+    <div class="navbar-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar mx-auto">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo2.png" width="210px" height="48" alt="ListingBot Logo">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page2/features.html">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page3/price.html">PRICE</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-small contact-button">
+                                <a href="../pageFAQ/faq.html" rel="noopener noreferrer"
+                                    class="btn">CONTACT US</a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid mycontainer">
+        <div class="row containercontent">
+            
+            <div class="col-md-6 col-sm-6 p1">
+                <div class="headerplacers">
+                    <p class="subHeading">CONTACT US</p>
+                    <h1 class="mainHeading">Talk to us</h1>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <img class="imgplacer" src="../assets/telephonecall.png">
+                        <p class="phoneheader">Phone <br><span class="phoneheader_value">+91 1234567890</span></p>
+                    </div>
+                    <div class="info">
+                        <img class="imgplacer" src="../assets/email.png">
+                        <p class="phoneheader">Email <br><span class="phoneheader_value">bot@hotmail.com</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col placer">
+                <div class="headerplacers2">
+                    <h1 class="mainHeadingp2">Drop us a line</h1>
+                </div>
+                <form id="contactForm" autocomplete="off">
+                    <div class="custom-input">
+                        <input type="text" id="nameInput" name="name" required style="color: white;">
+                        <label for="nameInput">Name *</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="email" id="emailInput" name="email" required style="color: white;">
+                        <label for="emailInput">Email *</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="text" id="numberInput" name="number" required style="color: white;">
+                        <label for="numberInput">Phone Number *</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="text" id="subjectInput" name="subject" required style="color: white;">
+                        <label for="subjectInput">Subject *</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="text" id="messageInput" name="message" required style="color: white;">
+                    </input>
+                        <label for="messageInput">Message *</label>
+                    </div>
+                    <button class="custBTN" type="submit" >SUBMIT NOW</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="thankYouPopup" class="popup">
+        <div class="popup-content">
+            <i id="closePopup" class="fas fa-times close-icon"></i>
+            <h2>Thank you!</h2>
+            <p>Your message has been sent successfully.</p>
+        </div>
+    </div>
+    <div id="loadingIndicator" class="loading-indicator">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+
+
+    <div class="center container">
+        <h1 class="topheading">How can we <samp class="topheading" style="color: #5555d1;">help</samp> you?</h1>
+    </div>
+    <!-- <div class="col ask center"></div> -->
+
+    <div class="col-sm-6 center section1">
+        <h2 class="heading2">Getting Started</h2>
+    </div>
+    <div class="ques">
+        <div class="row">
+            <div class="col-2"></div>
+            <p class="col-7 question" >How can i deploy bot for my business?</p>
+            <div class="col">
+                <img class="right droparrow rotate" id="arrow01" onclick="myFunction()" src="../assets/right_arrow.png" alt="">
+            </div>
+        </div>
+        <div class="row answer">
+            <div class="col-2"></div>
+            <p class="col para" id="ans01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur debitis est
+                quibusdam quam dolore voluptas molestias possimus quos, fuga a perferendis Lorem  amet consectetur adipisicing elit. exercitationem minima qui?
+            </p>
+            <div class="col-3">
+            
+            </div>
+        </div>
+        
+        <hr />
+    </div>
+
+    <div class="ques">
+        <div class="row">
+            <div class="col-2"></div>
+            <p class="col-7 question">Can i migrate to another site?</p>
+            <div class="col">
+                <img class="right droparrow rotate" id="arrow02" onclick="myFunction2()" src="../assets/right_arrow.png" alt="">
+            </div>
+            
+        </div>
+        <div class="row answer">
+            <div class="col-2"></div>
+            <p class="col para" id="ans02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur debitis est
+                quibusdam quam dolore voluptas molestias possimus quos, fuga a perferendis Lorem  amet consectetur adipisicing elit. exercitationem minima qui?
+            </p>
+            <div class="col-3">
+            
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <div class="ques">
+        <div class="row">
+            <div class="col-2"></div>
+            <p class="col-7 question">Can i customize my subscription?</p>
+            <div class="col">
+                <img class="right droparrow rotate"  id="arrow03" onclick="myFunction3()" src="../assets/right_arrow.png" alt="">
+            </div>
+            
+        </div>
+        <div class="row answer">
+            <div class="col-2"></div>
+            <p class="col para" id="ans03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur debitis est
+                quibusdam quam dolore voluptas molestias possimus quos, fuga a perferendis Lorem ipsum dolor sit amet consectetur adipisicing elit. exercitationem minima qui?
+            </p>
+            <div class="col-3">
+            
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <div class="col-sm-6 center section1">
+        <h2 class="heading2">Troubleshootin</h2>
+    </div>
+    <div class="ques">
+        <div class="row">
+            <div class="col-2"></div>
+            <p class="col-7 question" >Unable to connect database.</p>
+            <div class="col">
+                <img class="right droparrow rotate" id="arrow04" onclick="myFunction4()" src="../assets/right_arrow.png" alt="">
+            </div>
+        </div>
+        <div class="row answer">
+            <div class="col-2"></div>
+            <p class="col para" id="ans04">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur debitis est 
+                quibusdam quam dolore voluptas molestias possimus quos, fuga a perferendis Lorem ipsum dolor sit amet consectetur adipisicing elit. exercitationem minima qui?
+            </p>
+            <div class="col-3">
+            
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <div class="ques">
+        <div class="row">
+            <div class="col-2"></div>
+            <p class="col-7 question">Maximum limit reached.</p>
+            <div class="col">
+                <img class="right droparrow rotate" id="arrow05" onclick="myFunction5()" src="../assets/right_arrow.png" alt="">
+            </div>
+            
+        </div>
+        <div class="row answer">
+            <div class="col-2"></div>
+            <p class="col para" id="ans05">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur debitis est
+                quibusdam quam dolore voluptas molestias possimus quos, fuga a perferendis Lorem ipsum dolor sit amet consectetur adipisicing elit. exercitationem minima qui?
+            </p>
+            <div class="col-3">
+            
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <!--FOOTER-SECTION-->
+
+    <div class="footter-section">
+        <div style="margin-top: 30px;"></div>
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 item text">
+                            <img class="flogo" src="../assets/Footer_logo.png" alt="Footer logo">
+                            <p>Contrary to popular belief, Lorem Ipsum is not <br> simply random text.</p>
+                        </div>
+                        <div class="col-sm-4 col-md-2 item">
+                            <h3>Menu</h3>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../page3/price.html">Pricing</a></li>
+                                <li><a href="../page2/features.html">Features</a></li>
+                                <!-- <li><a href="../pageFAQ/faq.html">Contact us</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item social logoshifter">
+                            <h2>Follow Us</h2>
+                            <a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        </div>
+                        <div class ="col-sm-4 col-md-3 item">
+                            <h3>Contact us</h3>
+                            <ul>
+                                <li><a href="#">Email : listingbot@gmail.com</a></li>
+                                <li><a href="#">Mobile : +910008790012</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottomfoot">
+                        <div class="row">
+                            <p class="col-md-5 copyright">ListingBot © 2023 | Name here</p>
+                            <p class="col-md-6 terms">Made with NexZ Labs</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
